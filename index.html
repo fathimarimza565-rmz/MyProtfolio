@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rimza Rauff — IT Undergraduate &amp; Full-Stack Developer</title>
+<meta name="description" content="Portfolio of Rimza Rauff — IT undergraduate, full-stack &amp; web developer, and aspiring UI/UX designer from Sri Lanka.">
+
+<link rel="icon" href="data:,">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- background circuit canvas, decorative -->
+<div class="bg-field" aria-hidden="true">
+  <div class="bg-glow bg-glow--a"></div>
+  <div class="bg-glow bg-glow--b"></div>
+  <svg class="bg-circuit" viewBox="0 0 1440 1600" preserveAspectRatio="xMidYMin slice" xmlns="http://www.w3.org/2000/svg">
+    <path class="circuit-line" d="M -50 120 L 180 120 L 240 180 L 460 180 L 520 120 L 780 120" />
+    <path class="circuit-line" d="M 1490 260 L 1220 260 L 1160 320 L 980 320 L 920 380" />
+    <path class="circuit-line" d="M -50 640 L 160 640 L 220 700 L 420 700" />
+    <path class="circuit-line" d="M 1490 900 L 1260 900 L 1200 960 L 1000 960 L 940 1020 L 780 1020" />
+    <path class="circuit-line" d="M -50 1300 L 200 1300 L 260 1360 L 520 1360" />
+    <g class="circuit-nodes">
+      <circle cx="180" cy="120" r="4"/><circle cx="460" cy="180" r="4"/><circle cx="780" cy="120" r="5"/>
+      <circle cx="1220" cy="260" r="4"/><circle cx="980" cy="320" r="4"/><circle cx="920" cy="380" r="5"/>
+      <circle cx="160" cy="640" r="4"/><circle cx="420" cy="700" r="5"/>
+      <circle cx="1260" cy="900" r="4"/><circle cx="1000" cy="960" r="4"/><circle cx="780" cy="1020" r="5"/>
+      <circle cx="200" cy="1300" r="4"/><circle cx="520" cy="1360" r="5"/>
+    </g>
+  </svg>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#home" class="nav__logo" aria-label="Rimza Rauff — home">
+      <span class="nav__avatar"><img src="assets/profile.jpg" alt="" width="36" height="36" loading="eager"></span>
+      <span class="nav__logotype">Rimza A.Rauff</span>
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#home" class="nav__link">Home</a>
+      <a href="#about" class="nav__link">About</a>
+      <a href="#projects" class="nav__link">Projects</a>
+      <a href="#skills" class="nav__link">Skills</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </nav>
+    
+    <!---
+    <div class="nav__actions">
+      <a href="assets/Rimza-Rauff-Resume.pdf" download="Rimza-Rauff-Resume.pdf" class="btn btn--ghost btn--small">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg>
+        Resume
+      </a>
+    </div>
+    --->
+
+    <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="wrap hero__grid">
+
+      <div class="hero__copy">
+        <p class="kicker"><span class="kicker__dot"></span>Available for internships &amp; entry-level roles</p>
+        <h1 class="hero__title">
+          Turning ideas into digital solutions, one build at a time.
+        </h1>
+        <p class="hero__sub">
+          I'm Rimza Rauff, an IT undergraduate and full-stack developer from Sri Lanka.
+          I design and build web applications end to end — from React and Node.js on the
+          backend to clean, user-centred interfaces on the front — and I'm looking for a
+          team to grow with.
+        </p>
+        <div class="hero__cta">
+          <a href="assets/Rimza-Rauff-Resume.pdf" download="Rimza-Rauff-Resume.pdf" class="btn btn--primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            Download resume
+          </a>
+          <a href="#contact" class="btn btn--outline">Get in touch</a>
+        </div>
+        
+        <!--
+        <dl class="hero__stats">
+          <div class="hero__stat"><dt>6</dt><dd>web &amp; software projects</dd></div>
+          <div class="hero__stat"><dt>3</dt><dd>languages spoken</dd></div>
+          <div class="hero__stat"><dt>2026</dt><dd>graduating HND</dd></div>
+        </dl>
+        -->
+      </div>
+
+      <div class="hero__portrait">
+        <div class="portrait-ring">
+          <div class="portrait-ring__glow" aria-hidden="true"></div>
+          <img class="portrait-ring__img" src="assets/profile.jpg" alt="Portrait of Rimza Rauff" width="480" height="480">
+          <span class="portrait-node portrait-node--1" aria-hidden="true"></span>
+          <span class="portrait-node portrait-node--2" aria-hidden="true"></span>
+          <span class="portrait-node portrait-node--3" aria-hidden="true"></span>
+        </div>
+        <div class="portrait-chip portrait-chip--1">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          Full-Stack Developer
+        </div>
+        <div class="portrait-chip portrait-chip--2">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7Z"/></svg>
+          UI/UX Designer
+        </div>
+      </div>
+
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to about section"><span></span></a>
+  </section>
+
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker kicker--muted">About</p>
+        <h2 class="h2">A builder who likes finishing what she starts</h2>
+      </div>
+
+      <div class="about">
+        <div class="about__text">
+          <p>
+            I'm an Information Technology undergraduate with hands-on, full-stack
+            development experience across HTML, CSS, JavaScript, PHP, React.js and
+            Node.js — complemented by UI/UX design skills built around wireframing
+            and prototyping in Figma and Canva. I'm comfortable working across the
+            whole stack, from frontend interfaces down to backend logic, and I bring
+            a detail-oriented, user-centred approach to everything I build.
+          </p>
+          <p>
+            I'm a fast learner who adapts quickly to new tools and frameworks, and I
+            care about getting the details right — validation, accuracy and clean
+            handoffs matter to me as much as the first working version. I'm currently
+            looking for an internship or entry-level role as a Full-Stack, Frontend or
+            Web Developer, or UI/UX Designer, where I can keep growing as a
+            well-rounded software professional.
+          </p>
+
+          <ul class="values">
+            <li>
+              <span class="values__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg></span>
+              <div><strong>Full-stack versatility</strong><span>Equally comfortable building frontend interfaces and backend logic, with a solid grasp of the full SDLC.</span></div>
+            </li>
+            <li>
+              <span class="values__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-12"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/></svg></span>
+              <div><strong>User-centred design</strong><span>A strong focus on usability and clean, intuitive interfaces across web and desktop projects.</span></div>
+            </li>
+            <li>
+              <span class="values__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg></span>
+              <div><strong>Fast &amp; adaptable</strong><span>Quickly picks up new languages, frameworks and workflows across development and design contexts.</span></div>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="about__side">
+          <div class="info-card">
+            <h3>Quick facts</h3>
+            <ul class="info-list">
+              <li><span>Based in</span><strong>Sri Lanka</strong></li>
+              <li><span>Studying</span><strong>HND in IT · SLIATE Nawalapitiya</strong></li>
+              <li><span>Batch</span><strong>2324 · 2024–2026</strong></li>
+              <li><span>Languages</span><strong>Tamil, English, Sinhala</strong></li>
+              <li><span>Looking for</span><strong>Internship / entry-level role</strong></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section class="section section--tint" id="education">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker kicker--muted">Education</p>
+        <h2 class="h2">Education &amp; training</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline__item">
+          <div class="timeline__marker"></div>
+          <div class="timeline__card timeline__card--current">
+            <span class="timeline__date">Final Year · 2324 Batch (2024 – 2026)</span>
+            <h3>Higher National Diploma (HND) in Information Technology</h3>
+            <p>SLIATE, Nawalapitiya</p>
+          </div>
+        </li>
+        <li class="timeline__item">
+          <div class="timeline__marker"></div>
+          <div class="timeline__card">
+            <span class="timeline__date">Batch 11 · in progress</span>
+            <h3>Diploma in Human Resources Management</h3>
+            <p>Royal Academy of Professional Studies</p>
+          </div>
+        </li>
+        <li class="timeline__item">
+          <div class="timeline__marker"></div>
+          <div class="timeline__card">
+            <span class="timeline__date">Completed</span>
+            <h3>Graphic Design &amp; Web Development</h3>
+            <p>Kingspan College, Mawanella</p>
+          </div>
+        </li>
+        <li class="timeline__item">
+          <div class="timeline__marker"></div>
+          <div class="timeline__card">
+            <span class="timeline__date">Completed</span>
+            <h3>English Extension Course</h3>
+            <p>University of Peradeniya</p>
+          </div>
+        </li>
+        <li class="timeline__item">
+          <div class="timeline__marker"></div>
+          <div class="timeline__card">
+            <span class="timeline__date">Completed</span>
+            <h3>Diploma in English</h3>
+            <p>SLEGA English Academy</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker kicker--muted">Projects</p>
+        <h2 class="h2">Featured projects</h2>
+        <p class="section-lead">
+          A mix of individual and group work spanning full-stack web apps and a desktop
+          application — each one built to practice a different part of the stack.
+        </p>
+      </div>
+
+      <div class="project-group">
+        <h3 class="project-group__title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"/></svg>
+          Individual projects
+        </h3>
+        <div class="project-grid">
+
+          <article class="project-card">
+            <div class="project-card__media project-card__media--a">
+              <svg viewBox="0 0 200 120" class="project-card__art" aria-hidden="true">
+                <circle cx="34" cy="30" r="3" class="art-node"/><circle cx="170" cy="90" r="3" class="art-node"/>
+                <path d="M34 30 L70 30 L90 50" class="art-line"/>
+                <path d="M170 90 L140 90 L120 70" class="art-line"/>
+              </svg>
+              <svg class="project-card__icon" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 10h18"/><path d="M8 2v4M16 2v4"/><path d="m9 16 2 2 4-4"/></svg>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__head">
+                <span class="project-card__badge">Individual project</span>
+              </div>
+              <h4>Salon Booking System</h4>
+              <p class="project-card__desc">
+                A full-stack, multi-role booking platform for customers, receptionists and
+                admins, with appointment scheduling, role-based interfaces and booking history.
+              </p>
+              <ul class="project-card__stack">
+                <li>React</li><li>Node.js</li><li>Express</li><li>MongoDB</li>
+              </ul>
+              <div class="project-card__actions">
+                <a href="https://github.com/fathimarimza565-rmz" target="_blank" rel="noopener" class="btn btn--chip">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.45-1.19-1.11-1.51-1.11-1.51-.9-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.16-4.56-5.14 0-1.14.39-2.06 1.03-2.79-.1-.26-.45-1.32.1-2.75 0 0 .84-.28 2.75 1.06a9.2 9.2 0 0 1 2.5-.35c.85 0 1.71.12 2.5.35 1.91-1.34 2.75-1.06 2.75-1.06.55 1.43.2 2.49.1 2.75.64.73 1.03 1.65 1.03 2.79 0 3.99-2.34 4.87-4.57 5.13.36.32.68.95.68 1.92 0 1.39-.01 2.51-.01 2.85 0 .28.18.61.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__media project-card__media--b">
+              <svg viewBox="0 0 200 120" class="project-card__art" aria-hidden="true">
+                <circle cx="30" cy="90" r="3" class="art-node"/><circle cx="166" cy="26" r="3" class="art-node"/>
+                <path d="M30 90 L64 90 L84 70" class="art-line"/>
+                <path d="M166 26 L132 26 L112 46" class="art-line"/>
+              </svg>
+              <svg class="project-card__icon" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.35-9.5-9C.87 8.36 2.6 5 6 5c2 0 3.35 1 4 2 .65-1 2-2 4-2 3.4 0 5.13 3.36 3.5 7-2.5 4.65-9.5 9-9.5 9Z"/></svg>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__head">
+                <span class="project-card__badge">Individual project</span>
+              </div>
+              <h4>FundUs — Fundraising Platform</h4>
+              <p class="project-card__desc">
+                A responsive fundraising website with campaign listings, donation forms and
+                user registration, designed around a clean and intuitive donor flow.
+              </p>
+              <ul class="project-card__stack">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li>
+              </ul>
+              <div class="project-card__actions">
+                <a href="https://github.com/fathimarimza565-rmz" target="_blank" rel="noopener" class="btn btn--chip">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.45-1.19-1.11-1.51-1.11-1.51-.9-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.16-4.56-5.14 0-1.14.39-2.06 1.03-2.79-.1-.26-.45-1.32.1-2.75 0 0 .84-.28 2.75 1.06a9.2 9.2 0 0 1 2.5-.35c.85 0 1.71.12 2.5.35 1.91-1.34 2.75-1.06 2.75-1.06.55 1.43.2 2.49.1 2.75.64.73 1.03 1.65 1.03 2.79 0 3.99-2.34 4.87-4.57 5.13.36.32.68.95.68 1.92 0 1.39-.01 2.51-.01 2.85 0 .28.18.61.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__media project-card__media--c">
+              <svg viewBox="0 0 200 120" class="project-card__art" aria-hidden="true">
+                <circle cx="40" cy="26" r="3" class="art-node"/><circle cx="160" cy="94" r="3" class="art-node"/>
+                <path d="M40 26 L76 26 L96 46" class="art-line"/>
+                <path d="M160 94 L124 94 L104 74" class="art-line"/>
+              </svg>
+              <svg class="project-card__icon" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__head">
+                <span class="project-card__badge">Individual project</span>
+              </div>
+              <h4>PHP CRUD Application</h4>
+              <p class="project-card__desc">
+                A secure web app covering full create, read, update and delete operations,
+                with user authentication and server-side form validation.
+              </p>
+              <ul class="project-card__stack">
+                <li>PHP</li><li>MySQL</li><li>HTML</li><li>CSS</li>
+              </ul>
+              <div class="project-card__actions">
+                <a href="https://github.com/fathimarimza565-rmz" target="_blank" rel="noopener" class="btn btn--chip">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.45-1.19-1.11-1.51-1.11-1.51-.9-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.16-4.56-5.14 0-1.14.39-2.06 1.03-2.79-.1-.26-.45-1.32.1-2.75 0 0 .84-.28 2.75 1.06a9.2 9.2 0 0 1 2.5-.35c.85 0 1.71.12 2.5.35 1.91-1.34 2.75-1.06 2.75-1.06.55 1.43.2 2.49.1 2.75.64.73 1.03 1.65 1.03 2.79 0 3.99-2.34 4.87-4.57 5.13.36.32.68.95.68 1.92 0 1.39-.01 2.51-.01 2.85 0 .28.18.61.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <div class="project-group">
+        <h3 class="project-group__title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          Group projects
+        </h3>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-card__media project-card__media--d">
+              <svg viewBox="0 0 200 120" class="project-card__art" aria-hidden="true">
+                <circle cx="36" cy="94" r="3" class="art-node"/><circle cx="164" cy="30" r="3" class="art-node"/>
+                <path d="M36 94 L72 94 L92 74" class="art-line"/>
+                <path d="M164 30 L128 30 L108 50" class="art-line"/>
+              </svg>
+              <svg class="project-card__icon" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 10h18M8 2v4M16 2v4"/><path d="M8 15h2M12 15h4M8 18h8"/></svg>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__head">
+                <span class="project-card__badge project-card__badge--group">Group project</span>
+              </div>
+              <h4>Event Management System</h4>
+              <p class="project-card__desc">
+                A responsive site for browsing events and registering participants, built with
+                complete form validation and cross-device responsiveness.
+              </p>
+              <ul class="project-card__stack">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li>
+              </ul>
+              <div class="project-card__actions">
+                <a href="https://github.com/fathimarimza565-rmz" target="_blank" rel="noopener" class="btn btn--chip">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.45-1.19-1.11-1.51-1.11-1.51-.9-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.16-4.56-5.14 0-1.14.39-2.06 1.03-2.79-.1-.26-.45-1.32.1-2.75 0 0 .84-.28 2.75 1.06a9.2 9.2 0 0 1 2.5-.35c.85 0 1.71.12 2.5.35 1.91-1.34 2.75-1.06 2.75-1.06.55 1.43.2 2.49.1 2.75.64.73 1.03 1.65 1.03 2.79 0 3.99-2.34 4.87-4.57 5.13.36.32.68.95.68 1.92 0 1.39-.01 2.51-.01 2.85 0 .28.18.61.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__media project-card__media--e">
+              <svg viewBox="0 0 200 120" class="project-card__art" aria-hidden="true">
+                <circle cx="32" cy="30" r="3" class="art-node"/><circle cx="168" cy="90" r="3" class="art-node"/>
+                <path d="M32 30 L66 30 L86 50" class="art-line"/>
+                <path d="M168 90 L134 90 L114 70" class="art-line"/>
+              </svg>
+              <svg class="project-card__icon" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-6h6v6"/><path d="M3 9h18"/></svg>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__head">
+                <span class="project-card__badge project-card__badge--group">Group project</span>
+              </div>
+              <h4>Hostel Booking System</h4>
+              <p class="project-card__desc">
+                A Java desktop application handling registration, room booking and
+                availability tracking, with accurate record management.
+              </p>
+              <ul class="project-card__stack">
+                <li>Java</li><li>Swing / JavaFX</li>
+              </ul>
+              <div class="project-card__actions">
+                <a href="https://github.com/fathimarimza565-rmz" target="_blank" rel="noopener" class="btn btn--chip">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.45-1.19-1.11-1.51-1.11-1.51-.9-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.16-4.56-5.14 0-1.14.39-2.06 1.03-2.79-.1-.26-.45-1.32.1-2.75 0 0 .84-.28 2.75 1.06a9.2 9.2 0 0 1 2.5-.35c.85 0 1.71.12 2.5.35 1.91-1.34 2.75-1.06 2.75-1.06.55 1.43.2 2.49.1 2.75.64.73 1.03 1.65 1.03 2.79 0 3.99-2.34 4.87-4.57 5.13.36.32.68.95.68 1.92 0 1.39-.01 2.51-.01 2.85 0 .28.18.61.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__media project-card__media--f">
+              <svg viewBox="0 0 200 120" class="project-card__art" aria-hidden="true">
+                <circle cx="34" cy="90" r="3" class="art-node"/><circle cx="164" cy="28" r="3" class="art-node"/>
+                <path d="M34 90 L70 90 L90 70" class="art-line"/>
+                <path d="M164 28 L130 28 L110 48" class="art-line"/>
+              </svg>
+              <svg class="project-card__icon" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5s6.5 7.2 6.5 11.8a6.5 6.5 0 1 1-13 0C5.5 9.7 12 2.5 12 2.5Z"/></svg>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__head">
+                <span class="project-card__badge project-card__badge--group">Group project</span>
+              </div>
+              <h4>Blood Donation System</h4>
+              <p class="project-card__desc">
+                A platform connecting donors and recipients, with registration, donor
+                search and request features, built around a user-friendly search and
+                request-handling flow.
+              </p>
+              <ul class="project-card__stack">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li>
+              </ul>
+              <div class="project-card__actions">
+                <a href="https://github.com/fathimarimza565-rmz" target="_blank" rel="noopener" class="btn btn--chip">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.45-1.19-1.11-1.51-1.11-1.51-.9-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.16-4.56-5.14 0-1.14.39-2.06 1.03-2.79-.1-.26-.45-1.32.1-2.75 0 0 .84-.28 2.75 1.06a9.2 9.2 0 0 1 2.5-.35c.85 0 1.71.12 2.5.35 1.91-1.34 2.75-1.06 2.75-1.06.55 1.43.2 2.49.1 2.75.64.73 1.03 1.65 1.03 2.79 0 3.99-2.34 4.87-4.57 5.13.36.32.68.95.68 1.92 0 1.39-.01 2.51-.01 2.85 0 .28.18.61.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section section--tint" id="skills">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker kicker--muted">Skills</p>
+        <h2 class="h2">Skills &amp; tools</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-card__icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3 class="skill-card__title">Languages</h3>
+          <ul class="tag-list">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>Java</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <h3 class="skill-card__title">Frontend</h3>
+          <ul class="tag-list">
+            <li>React.js</li><li>Bootstrap</li><li>Responsive Design</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M5 12a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2M5 12a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2"/></svg>
+          </div>
+          <h3 class="skill-card__title">Backend &amp; database</h3>
+          <ul class="tag-list">
+            <li>Node.js</li><li>Express.js</li><li>MySQL</li><li>MongoDB</li><li>REST APIs</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+          </div>
+          <h3 class="skill-card__title">Design</h3>
+          <ul class="tag-list">
+            <li>Figma</li><li>Canva</li><li>Photoshop</li><li>Illustrator</li><li>Wireframing</li><li>Prototyping</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1.04 1.56V21a2 2 0 0 1-4 0v-.09A1.7 1.7 0 0 0 9 19.4a1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.7 1.7 0 0 0 .34-1.87 1.7 1.7 0 0 0-1.56-1.04H3a2 2 0 0 1 0-4h.09A1.7 1.7 0 0 0 4.6 9a1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.7 1.7 0 0 0 1.87.34H9a1.7 1.7 0 0 0 1.04-1.56V3a2 2 0 0 1 4 0v.09a1.7 1.7 0 0 0 1.04 1.56 1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.7 1.7 0 0 0-.34 1.87V9a1.7 1.7 0 0 0 1.56 1.04H21a2 2 0 0 1 0 4h-.09a1.7 1.7 0 0 0-1.56 1.04Z"/></svg>
+          </div>
+          <h3 class="skill-card__title">Tools &amp; concepts</h3>
+          <ul class="tag-list">
+            <li>Git / GitHub</li><li>VS Code</li><li>NetBeans</li><li>WordPress</li><li>OOP</li><li>SDLC</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE / STRENGTHS ============ -->
+  <section class="section" id="experience">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker kicker--muted">Strengths</p>
+        <h2 class="h2">Experience &amp; strengths</h2>
+        <p class="section-lead">
+          My hands-on experience so far comes from six individual and group projects
+          spanning full-stack web apps and desktop software — each one built to practice a
+          different part of the stack, from client-side validation to secure authentication.
+        </p>
+      </div>
+
+      <div class="strengths-grid">
+        <div class="strength-card">
+          <div class="strength-card__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>
+          </div>
+          <h3>Precision</h3>
+          <p>Careful, tested work — I'd rather catch a bug myself than have a user find it.</p>
+        </div>
+        <div class="strength-card">
+          <div class="strength-card__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Collaboration</h3>
+          <p>Comfortable in group projects, remote or in-person, with clear communication.</p>
+        </div>
+        <div class="strength-card">
+          <div class="strength-card__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-4 4"/></svg>
+          </div>
+          <h3>Adaptability</h3>
+          <p>I pick up new languages and frameworks quickly when a project calls for it.</p>
+        </div>
+      </div>
+
+      <div class="testimonials">
+        <h3 class="h3">References</h3>
+        <div class="testimonial-grid">
+          <blockquote class="testimonial-card">
+            <p>Full contact details available on request.</p>
+            <footer>
+              <strong>D.M.C.L. Dasanayaka</strong>
+              <span>Demonstrator IT, ATI Nawalapitiya</span>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial-card">
+            <p>Full contact details available on request.</p>
+            <footer>
+              <strong>C. Alex Chrishanthan</strong>
+              <span>Sponsorship Data &amp; Business Systems Specialist, World Vision</span>
+            </footer>
+          </blockquote>
+        </div>
+        <p class="testimonial-note">Reference contact details are included in my downloadable resume.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section--dark" id="contact">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker kicker--light">Contact</p>
+        <h2 class="h2 h2--light">Let's build something together</h2>
+        <p class="section-lead section-lead--light">
+          Looking for an internship or an entry-level opportunity where I can grow as a
+          full-stack developer or UI/UX designer. I'd love to hear from you.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!--
+          FORMSPREE SETUP:
+          1. Go to https://formspree.io and create a free account.
+          2. Create a new form and copy your Form ID (looks like "xyzabcde").
+          3. Replace YOUR_FORM_ID below with that ID.
+          That's it — submissions will land in your Formspree inbox / email.
+        -->
+
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xaeypggn" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about the opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send message</button>
+          <p class="form-note" id="formNote" role="status"></p>
+        </form>
+
+        <div class="contact-details">
+          <a class="contact-link" href="mailto:rimzarauff@gmail.com">
+            <span class="contact-link__icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+            </span>
+            <span class="contact-link__text">
+              <span class="contact-link__label">Email</span>
+              <span class="contact-link__value">rimzarauff@gmail.com</span>
+            </span>
+          </a>
+          <a class="contact-link" href="tel:+94754439565">
+            <span class="contact-link__icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
+            <span class="contact-link__text">
+              <span class="contact-link__label">Phone</span>
+              <span class="contact-link__value">+94 75 443 9565</span>
+            </span>
+          </a>
+          <a class="contact-link" href="https://linkedin.com/in/rimza-rauff" target="_blank" rel="noopener">
+            <span class="contact-link__icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6Z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </span>
+            <span class="contact-link__text">
+              <span class="contact-link__label">LinkedIn</span>
+              <span class="contact-link__value">linkedin.com/in/rimza-rauff</span>
+            </span>
+          </a>
+          <a class="contact-link" href="https://github.com/fathimarimza565-rmz" target="_blank" rel="noopener">
+            <span class="contact-link__icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.45-1.19-1.11-1.51-1.11-1.51-.9-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.16-4.56-5.14 0-1.14.39-2.06 1.03-2.79-.1-.26-.45-1.32.1-2.75 0 0 .84-.28 2.75 1.06a9.2 9.2 0 0 1 2.5-.35c.85 0 1.71.12 2.5.35 1.91-1.34 2.75-1.06 2.75-1.06.55 1.43.2 2.49.1 2.75.64.73 1.03 1.65 1.03 2.79 0 3.99-2.34 4.87-4.57 5.13.36.32.68.95.68 1.92 0 1.39-.01 2.51-.01 2.85 0 .28.18.61.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+            </span>
+            <span class="contact-link__text">
+              <span class="contact-link__label">GitHub</span>
+              <span class="contact-link__value">github.com/fathimarimza565-rmz</span>
+            </span>
+          </a>
+          <div class="contact-link contact-link--static">
+            <span class="contact-link__icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <span class="contact-link__text">
+              <span class="contact-link__label">Location</span>
+              <span class="contact-link__value">Mawanella, Sri Lanka</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <span>© <span id="year"></span> Rimza Rauff. Built with HTML, CSS &amp; JavaScript.</span>
+    <a href="#home" class="footer__top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
